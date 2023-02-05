@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="butup" id="butup2"></div>
+  <header>
+    <div class="header full-container">
+      <h1>Плагин для упрощения мобильной вёрстки WebToolsMobile от <a href="https://vk.link/titanexpert">TitanExpert</a></h1>
+    </div>
+  </header>
+  <section>
+    <div class="container description">
+      <p>WebToolsMobile - это JavaScript плагин для сайта, который упрощает разработку мобильной версии для вашего сайта.
+        Благодоря плагину можно будет делать мобильные версии сайтов намного быстрее, а новичкам намного легче. 
+        В плагине есть несколько встроенных команд, с помощью которых можно за минуту сделать открывающееся меню без каких либо знаний JavaScript и многое другое.
+        <span class="text_select">Рекомендуется смотреть страницу с ПК</span>
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="container menu-block">
+      <div class="container__menu-2">
+        <div class="but wtm-button" id="button-2"></div>  
+        <div class="menu" id="menu-2">
+          <ul>
+            <li>Первый элемент</li>
+            <li>Второй элемент</li>
+            <li>Третий элемент</li>
+            <li>Четвёртый элемент</li>
+            <li>Пятый элемент</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tell-block-1">
+        Чтобы создать меню, нужно написать HTML разметку меню, CSS стили и самое главное JavaScript код, с помощью которого будет происходить открытие и закрытие меню по нажатию кнопки. Это занимает время, особенно у начинающих веб разработчиков. Благодоря нашему плагину создать такое меню можно написав всего лишь пару строчек кода
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="title-yellow"><h2>Установка плагина WebToolsMobile</h2></div>
+    <div class="container column">
+      <div class="setup__text">
+        <p>1. Создайте пустой тег скрипта в HTML с типом "module"</p>
+        <div class="code-fragment">
+          <div class="code-fragment__text">
+            <p>&lt;script type=<span class="test_select-lite">"module"</span>&gt;<br></p>
+            <br>
+            <p>&lt;/script&gt;<br></p>
+          </div>
+        </div>
+        <p>2. Подключите плагин и импортируйте его функции</p>
+        <p class="setup__text__sposob">1) Подключить плагин по веб ссылке</p>
+        <div class="code-fragment">
+          <div class="code-fragment__text">
+            <p>&lt;script type=<span class="test_select-lite">"module"</span>&gt;<br></p>
+            <p><span class="text_select-lite">import</span> * <span class="text_select-lite">as</span> WTM <span class="text_select-lite">from "./webtoolsmobile.js"</span><br></p>
+            <p>&lt;/script&gt;</p>
+          </div>
+        </div>
+        <p class="setup__text__sposob">2) Скачать плагин и подключить его через локальные файлы</p>
+        <div class="code-fragment">
+          <div class="code-fragment__text">
+            <p>&lt;script type=<span class="test_select-lite">"module"</span>&gt;<br></p>
+            <p><span class="text_select-lite">import</span> * <span class="text_select-lite">as</span> WTM <span class="text_select-lite">from "./webtoolsmobile.js"</span><br></p>
+            <p>&lt;/script&gt;</p>
+          </div>
+        </div>
+        <a href="/download/WTM - TitanExpert.zip" class="button download-button">Скачать плагин</a>
+      </div>
+    </div>
+  </section>
+  <section class="command">
+    <div class="title-yellow"><h2>Работа с плагином</h2></div>
+    <div class="container column command__desc">
+      <p>Для работы с нашим плагином в скрипт нужно написать нужные вам команды. В нашем плагине есть самые необходимые команды для создания мобильной версии сайта.</p>
+      <h3 class="left-mini-title">Создание меню - WTM.menuAdd()</h3>
+      <div class="command__menu command__block raw">
+        <div class="command__block-left">
+          <div class="but wtm-button" id="button-3"></div>  
+          <div class="menu wtm-hidden" id="menu-3">
+            <ul>
+              Пример меню
+              <li>Первый элемент</li>
+              <li>Второй элемент</li>
+              <li>Третий элемент</li>
+              <li>Четвёртый элемент</li>
+              <li>Пятый элемент</li>
+            </ul>
+          </div>
+        </div>
+        <div class="command__block-right">
+          На большинстве сайтов есть меню, и на мобильных версиях они особенные. Меню на мобильных версиях
+          должны открываться и закрываться по нажатию на кнопку. Для создания меню есть команда <span class="text_select">WTM.menuAdd()</span><br>
+          Эта функция при помощи JavaScript объединяет кнопку и меню, после чего кнопка может открывать и закрывать меню<br>
+          <div class="code-fragment">
+            <div class="code-fragment__text">
+              <p><span class="text-opacity">&lt;script type=<span class="text_select-lite">"module"</span>&gt;<br></span></p>
+              <p><span class="text_select-lite">import</span> * <span class="text_select-lite">as</span> WTM <span class="text_select-lite">from "./webtoolsmobile.js"</span><br></p>
+              <p><span class="text_select-lite">WTM.menuAdd({"idButton": "button-1", "idMenu": "menu-1", "hiddenStyle": "display: none"})</span><br></p>
+              <p><span class="text-opacity">&lt;/script&gt;<br></span></p>
+            </div>
+          </div>
+          У функции есть несколько атрибутов:<br>
+          <span class="text_select">idButton</span> - id кнопки<span class="text-dark-yellow">*</span><br>
+          <span class="text_select">idMenu</span> - id меню<span class="text-dark-yellow">*</span><br>
+          <span class="text_select">hiddenStyle</span> - css стиль, который накладывается на меню при его исчезновении. Автоматически задано значение "display: none", можно задать любой стиль, который будет убирать меню(opacity: 0)<br>
+          <br>
+          Все меню на этом сайте реализованы через плагин <span class="text_select">WebToolsMobile</span><br>
+          <span class="text_select-lite">(стили меню и крутые анимации не входят в плагин)</span>
+        </div>
+      </div>
+      <h3 class="left-mini-title">Скрытие элементов - WTM.hideElement()</h3>
+      <div class="command__hide command__block raw">
+        <div class="command__block-left">
+          <div class="command__hide__testblock"></div>
+          <div class="command__hide__testblock-2"></div>
+        </div>
+        <div class="command__block-right">
+          На мобильных версиях сайта могут быть такие элементы, которые никак не вписываются под мобильные устройства. Может быть и наоборот, могут быть элементы, которые подходят только для мобильной версии. Эта функция поможет скрывать нужные вам элементы. 
+          <div class="code-fragment">
+            <div class="code-fragment__text">
+              <p><span class="text-opacity">&lt;script type=<span class="text_select-lite">"module"</span>&gt;<br></span></p>
+              <p><span class="text_select-lite">import</span> * <span class="text_select-lite">as</span> WTM <span class="text_select-lite">from "./webtoolsmobile.js"</span><br></p>
+              <p><span class="text_select-lite">WTM.hideElement({"selector": ".menu__button", "hideWidth": 600, "mod": "bigger", "test": false})</span><br></p>
+              <p><span class="text-opacity">&lt;/script&gt;<br></span></p>
+            </div>
+          </div>
+          У функции есть несколько атрибутов:<br>
+          <span class="text_select">selector</span> - css селектор, по которому можно найти элемент в HTML. <span class="text_select">(.menu #menu-1)</span><span class="text-dark-yellow">*</span><br>
+          <span class="text_select">hideWidth</span> - ширина экрана, при которой будет скрываться элемент<span class="text-dark-yellow">*</span><br>
+          <span class="text_select">mod</span> - режим работы функции <span class="text_select">bigger/smaller</span><br>
+          - bigger - скрываются элементы, когда экран больше указанного значения <br>
+          - smaller - скрываются элементы, когда экран меньше (стандартное значение)</span><br>
+          <span class="text_select">test</span> - тест функции при любых значениях <span class="text_select">(если true, автоматически false)</span><br><br>
+          Не все параметры в функциях нашего плагина являются обязательными. У необязательных параметров значение установлено автоматически, и вы можете их написать, если вам нужно их поменять.
+        </div>
+      </div>
+      <h3 class="left-mini-title">Скролинг сайта - WTM.scrollButton()</h3>
+      <div class="command__hide command__block raw">
+        <div class="command__block-left">
+          <div class="butup" id="butup"></div>
+        </div>
+        <div class="command__block-right">
+          На мобильных версиях сайта иногда бывают кнопки, которые могут скролить сайт наверх, когда это необходимо. Мы так же предусмотрели эту функцию
+          <div class="code-fragment">
+            <div class="code-fragment__text">
+              <p><span class="text-opacity">&lt;script type=<span class="text_select-lite">"module"</span>&gt;<br></span></p>
+              <p><span class="text_select-lite">import</span> * <span class="text_select-lite">as</span> WTM <span class="text_select-lite">from "./webtoolsmobile.js"</span><br></p>
+              <p><span class="text_select-lite">WTM.scrollButton({"selector": ".scroll__button", "scroll": 0, "showOn": 500, "position": "absolute", "smoothScroll": true, "setStyle": 'position: fixed; right: 20px; bottom: 20px; z-index: 2'})</span><br></p>
+              <p><span class="text-opacity">&lt;/script&gt;<br></span></p>
+            </div>
+          </div>
+          У функции есть несколько атрибутов:<br>
+          <span class="text_select">selector</span> - селектор, по которому можно найти элемент<span class="text-dark-yellow">*</span><br>
+          <span class="text_select">scroll</span> - позиция прокрутки, до которой прокручивается сайт<span class="text-dark-yellow">*</span><br>
+          <span class="text_select">showOn</span> - позиция прокрутки, на которой будет появляться кнопка<br>
+          <span class="text_select">position</span> - позиция, относительно которой будет совершена прокрутка <span class="text_select">absolute/relative</span><br>
+          - absolute - прокрутка делается относительно сайта на точную координату (стандартное значение)<br>
+          - relative - прокрутка делается относительно от текущей прокрутки на определённую позицию<br>
+          <span class="text_select">smoothScroll</span> - плавная прокрутка (автоматически true)<br>
+          <span class="text_select">setStyle</span> - дополнительные стили для кнопки, назначаются автоматически, можно изменить вручную<br>
+        </div>
+      </div>
+      <h3 class="left-mini-title">Перестройка элементов - WTM.transform()</h3>
+      <div class="command__hide command__block raw">
+        <div class="command__block-left">
+          <div id="test-transform"></div>
+        </div>
+        <div class="command__block-right">
+          Для мобильных версий сайта очень часто нужно менять параметры элементов, чтобы они подходили под текущий размер экрана. Эта функция поможет вам!!
+          <div class="code-fragment">
+            <div class="code-fragment__text">
+              <p><span class="text-opacity">&lt;script type=<span class="text_select-lite">"module"</span>&gt;<br></span></p>
+              <p><span class="text_select-lite">import</span> * <span class="text_select-lite">as</span> WTM <span class="text_select-lite">from "./webtoolsmobile.js"</span><br></p>
+              <p><span class="text_select-lite">WTM.transform({"transformWidth": 700, "mod": "smaller", "setStyle": "#test-transform {border: 3px solid orange; background-color: white}", "test": "false"})</span><br></p>
+              <p><span class="text-opacity">&lt;/script&gt;<br></span></p>
+            </div>
+          </div>
+          У функции есть несколько атрибутов:<br>
+          <span class="text_select">transformWidth</span> - ширина экрана, при которой происходит изменение элементов<span class="text-dark-yellow">*</span><br>
+          <span class="text_select">mod</span> - режим, по которому происходит трансформация <span class="text_select">bigger/smaller</span><br>
+          - bigger - изменения происходят с объектами больше указанной величины <br>
+          - smaller - изменения происходят с объектами меньше указанной величины (автоматически) <br>
+          <span class="text_select">setStyle</span> - css стили, которые будут назначены элементам<span class="text-dark-yellow">*</span><br>
+          <span class="text_select">test</span> - применяет свойства к объектам и тестирует их без учёта условий функции (автоматически false)<br><br>
+          Атрибуты функции можно расставлять в любом порядке
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="webtoolsmobile.js" type="module"> // подключение плагина
+  </script>
+
+  <script type="module"> // функции плагина
+    import * as WTM from "./webtoolsmobile.js";
+    WTM.menuAdd({"idButton": "button-2", "idMenu": "menu-2", "hiddenStyle": "opacity: 0;"});
+    WTM.menuAdd({"idButton": "button-3", "idMenu": "menu-3"});
+    
+    WTM.transform({"transformWidth": 700, "mod": "smaller", 
+    "setStyle": "#menu-1 ul {flex-direction: column} #menu-1 ul li:hover {transform: translateX(30px)} #menu-1 ul li:first-child {width: calc(100% + 10px)}"});
+    WTM.transform({"transformWidth": 700, "mod": "smaller", 
+    "setStyle": ".butup {width: 60px; height: 60px} #menu-2 {width: 300px} #menu-2 ul {flex-direction: column} #menu-2 ul li:hover {transform: translateX(30px)} #menu-2 ul li:first-child {width: calc(100% + 10px)}", "test": true});
+    WTM.transform({"transformWidth": 700, "mod": "smaller",
+    "setStyle": "#menu-3 {width: 250px} #menu-3 ul {flex-direction: column} #menu-3 ul li:hover {transform: translateX(30px)} #menu-3 ul li:first-child {width: calc(100% + 10px)}", "test": true});
+    WTM.transform({"transformWidth": 700, "mod": "smaller", "setStyle": ".menu {font-size: 20px} .but {width: 60px; height: 60px} .header {font-size: 10px} .tell-block-1 {font-size: 20px; padding: 10px 15px; margin-left: 0px; margin-top: 20px} .description {font-size: 20px; padding: 5px 15px} .menu-block {flex-direction: column} .command__block {flex-direction: column} .left-mini-title {font-size: 20px} .command__desc {font-size: 25px} .command__block-right .code-fragment {margin-top: 15px; margin-bottom: 15px; padding: 15px} .command__block-right {font-size: 15px; margin-left: 0px; margin-top: 20px} .setup__text {font-size: 22px} .title-yellow {font-size: 17px}"})
+    
+    WTM.hideElement({"selector": ".command__hide__testblock", "hideWidth": 700, "mod": "smaller"});
+    WTM.hideElement({"selector": ".command__hide__testblock-2", "hideWidth": 700, "mod": "bigger"});
+
+    WTM.scrollButton({"selector": "#butup2", "scroll": 0, "showOn": 200});
+    WTM.scrollButton({"selector": "#butup", "scroll": 0, "showOn": 200, "setStyle": ""});
+    WTM.transform({"transformWidth": 700, "mod": "smaller", "setStyle": "#test-transform {border: 3px solid orange; background-color: white}"});
+  </script>
+
+  <!--<script type="module">
+    import * as obg from "./webtoolsmobile.js";
+    let wtm = obg;
+    document.querySelectorAll("#sandbox-code").forEach(function(sandbox) {
+      sandbox.addEventListener("input", function() {
+        let functext = Function((document.querySelector("#sandbox-code").value).replace("\n", ""));
+        functext(wtm);
+      }) 
+    })
+  </script>-->
+</body>
+</html>
