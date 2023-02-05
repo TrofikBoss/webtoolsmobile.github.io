@@ -151,6 +151,7 @@ margin-top: 50px;
 }
 .code-fragment__text {
   width: 100%;
+  word-wrap: break-word;
 }
 .nocopy {
   user-select: none;
